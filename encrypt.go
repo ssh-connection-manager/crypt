@@ -2,8 +2,8 @@ package crypt
 
 import "errors"
 
-func Encrypt(str string, pathConf string, NameFIleKey string) (string, error) {
-	cryptKey, err := GetKey(pathConf, NameFIleKey)
+func Encrypt(str string, pathConf string, fileNameKey string) (string, error) {
+	cryptKey, err := GetKey(pathConf, fileNameKey)
 	if err != nil {
 		return "", errors.New("err at get crypt key")
 	}

@@ -7,8 +7,8 @@ import (
 	"github.com/ssh-connection-manager/file"
 )
 
-func GetKey(pathConf string, NameFIleKey string) ([]byte, error) {
-	data, err := file.ReadFile(file.GetFullPath(pathConf, NameFIleKey))
+func GetKey(pathConf string, fileNameKey string) ([]byte, error) {
+	data, err := file.ReadFile(file.GetFullPath(pathConf, fileNameKey))
 	if err != nil {
 		return []byte(data), errors.New("empty name")
 	}
@@ -16,13 +16,13 @@ func GetKey(pathConf string, NameFIleKey string) ([]byte, error) {
 	return []byte(data), nil
 }
 
-func GenerateKey(pathConf string, NameFIleKey string) error {
-	filePath := file.GetFullPath(pathConf, NameFIleKey)
+func GenerateKey(pathConf string, fileNameKey string) error {
+	filePath := file.GetFullPath(pathConf, fileNameKey)
 
 	if !file.IsExistFile(filePath) {
 		file.CreateFile(filePath)
 
-		cryptKey, err := GetKey(pathConf, NameFIleKey)
+		cryptKey, err := GetKey(pathConf, fileNameKey)
 		if err != nil {
 			return errors.New("empty name")
 		}
@@ -35,7 +35,7 @@ func GenerateKey(pathConf string, NameFIleKey string) error {
 				return errors.New("key generation error")
 			}
 
-			err = file.WriteFile(file.GetFullPath(pathConf, NameFIleKey), key)
+			err = file.WriteFile(file.GetFullPath(pathConf, fileNameKey), key)
 			if err != nil {
 				return errors.New("error writing key")
 			}
