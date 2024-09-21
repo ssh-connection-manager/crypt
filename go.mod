@@ -1,4 +1,4 @@
-module crypt
+module github.com/ssh-connection-manager/crypt
 
 go 1.22
 
