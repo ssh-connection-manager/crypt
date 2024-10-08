@@ -1,2 +1,8 @@
 github.com/ssh-connection-manager/file v1.0.1 h1:t0bWe/WlYx/00i1zoO7ABL51oyB+7r1GlU4pktdVM0c=
 github.com/ssh-connection-manager/file v1.0.1/go.mod h1:v6ohozxsgX7s4ze2Vy4sesNBaJ9pcJG0aOmqgffJenA=
+github.com/ssh-connection-manager/file v1.1.0 h1:9Wk+hb+pcXsQ2q3OEbf2zx0+4TBFVAy10gGkkoSJS+0=
+github.com/ssh-connection-manager/file v1.1.0/go.mod h1:v6ohozxsgX7s4ze2Vy4sesNBaJ9pcJG0aOmqgffJenA=
+github.com/ssh-connection-manager/file v1.1.1 h1:e+AyEmBA95T5Nyy1Y2W77DW9CTO/cC13Peb+7oHgjXY=
+github.com/ssh-connection-manager/file v1.1.1/go.mod h1:v6ohozxsgX7s4ze2Vy4sesNBaJ9pcJG0aOmqgffJenA=
+github.com/ssh-connection-manager/file v1.2.0 h1:bwebzUDey017kgFmj6Zk0AP9jL7IABNDIl5UcshZl78=
+github.com/ssh-connection-manager/file v1.2.0/go.mod h1:v6ohozxsgX7s4ze2Vy4sesNBaJ9pcJG0aOmqgffJenA=
